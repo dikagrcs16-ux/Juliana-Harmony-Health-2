@@ -51,10 +51,10 @@
     <style>
         /* Variabel CSS dengan warna yang lebih kontras */
         :root {
-            --primary: #082462;
+            --primary: #2563eb;
             --secondary: #16a34a;
             --accent: #ea580c;
-            --purple: #6320d6;
+            --purple: #7c3aed;
             --pink: #db2777;
             --teal: #0d9488;
             --amber: #d97706;
@@ -462,7 +462,7 @@
         }
         
         ::-webkit-scrollbar-track {
-            background: #f1f1f1;
+            background: #0f1215;
         }
         
         ::-webkit-scrollbar-thumb {
@@ -543,7 +543,7 @@
         .health-meter {
             height: 10px;
             border-radius: 5px;
-            background: #e2e8f0;
+            background: #191d22;
             overflow: hidden;
             margin: 10px 0;
         }
@@ -644,7 +644,7 @@
         }
 
         .yoga-pose-detail {
-            background: white;
+            background: rgb(28, 37, 206);
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
@@ -671,11 +671,11 @@
         }
 
         .color-option.active {
-            border-color: white;
+            border-color: rgb(32, 29, 199);
             box-shadow: 0 0 0 2px var(--primary);
         }
 
-        /* Animasi tambahan untuk elemen medis */
+        /* Animasi untuk ilustrasi medis */
         .heart-animation {
             animation: heartbeat 1.5s ease-in-out infinite;
         }
@@ -685,37 +685,38 @@
         }
 
         .bacteria-animation {
-            animation: float 6s ease-in-out infinite;
+            animation: float 5s ease-in-out infinite;
         }
 
         .lungs-animation {
-            animation: breath 3s ease-in-out infinite;
+            animation: breath 4s ease-in-out infinite;
         }
 
+        /* Animasi untuk bakteri TB */
         .tb-bacteria {
             position: absolute;
-            width: 20px;
-            height: 20px;
-            background: rgba(217, 119, 6, 0.7);
+            width: 8px;
+            height: 8px;
+            background: #f59e0b;
             border-radius: 50%;
-            animation: float 8s ease-in-out infinite;
+            animation: float 8s infinite linear;
         }
 
         .tb-bacteria:nth-child(1) {
             top: 30%;
-            left: 20%;
+            left: 40%;
             animation-delay: 0s;
         }
 
         .tb-bacteria:nth-child(2) {
             top: 60%;
-            right: 25%;
+            left: 60%;
             animation-delay: -2s;
         }
 
         .tb-bacteria:nth-child(3) {
-            bottom: 30%;
-            left: 40%;
+            top: 40%;
+            left: 70%;
             animation-delay: -4s;
         }
     </style>
@@ -846,17 +847,17 @@
             <div class="section-divider"></div>
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-                <div class="text-center p-6 bg-slate-50 dark:bg-slate-700 rounded-xl shadow-md">
+                <div class="text-center p-6 bg-slate-100 dark:bg-slate-700 rounded-xl shadow-md">
                     <i class="fas fa-book-medical text-4xl text-primary mb-4"></i>
                     <h3 class="text-xl font-bold mb-2">Berbasis Bukti Ilmiah</h3>
                     <p>Semua informasi didasarkan pada penelitian terkini dan pedoman medis terpercaya.</p>
                 </div>
-                <div class="text-center p-6 bg-slate-50 dark:bg-slate-700 rounded-xl shadow-md">
+                <div class="text-center p-6 bg-slate-100 dark:bg-slate-700 rounded-xl shadow-md">
                     <i class="fas fa-user-md text-4xl text-primary mb-4"></i>
                     <h3 class="text-xl font-bold mb-2">Dikembangkan oleh Ahli</h3>
                     <p>Konten dikurasi dan ditinjau oleh profesional kesehatan berpengalaman.</p>
                 </div>
-                <div class="text-center p-6 bg-slate-50 dark:bg-slate-700 rounded-xl shadow-md">
+                <div class="text-center p-6 bg-slate-100 dark:bg-slate-700 rounded-xl shadow-md">
                     <i class="fas fa-language text-4xl text-primary mb-4"></i>
                     <h3 class="text-xl font-bold mb-2">Akses Mudah</h3>
                     <p>Informasi disajikan dalam bahasa yang mudah dipahami oleh masyarakat umum.</p>
@@ -890,7 +891,6 @@
                     <div class="p-6 flex flex-col md:flex-row gap-6">
                         <div class="md:w-1/2">
                             <img src="https://img.sanishtech.com/u/dd54256ece4b2a1800f32e9fedb8b972.png" alt="Hipertensi" class="rounded-lg shadow-md w-full h-64 object-cover animate-zoom-in">
-                            
                             <!-- Ilustrasi Hipertensi dengan Animasi -->
                             <div class="medical-illustration h-64 flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-slate-700 dark:to-slate-600 rounded-lg relative overflow-hidden">
                                 <div class="absolute inset-0 flex items-center justify-center">
@@ -1118,8 +1118,8 @@
                             </div>
 
                             <!-- Fitur Interaktif TB Paru -->
-                            <div class="mt-6 bg-gradient-to-r from-amber-50 to-orange-50 dark:from-slate-700 dark:to-slate-600 rounded-xl p-4 shadow-md interactive-element">
-                                <h4 class="text-xl font-bold text-amber-600 dark:text-amber-400 mb-3 flex items-center">
+                            <div class="mt-6 bg-gradient-to-r from-amber-50 to-white dark:from-amber-800 dark:to-amber-600 rounded-xl p-4 shadow-md interactive-element">
+                                <h4 class="text-xl font-bold text-amber-700 dark:text-amber-400 mb-3 flex items-center">
                                     <i class="fas fa-virus mr-2"></i> Kalkulator Risiko TB
                                 </h4>
                                 <div class="space-y-4">
@@ -1371,7 +1371,7 @@
                                 <p class="text-xs text-slate-600 dark:text-slate-400">Fleksibilitas tulang belakang</p>
                             </div>
                         </div>
-                        <button id="show-yoga-details" class="w-full mt-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold py-2 px-4 rounded transition-all duration-300 transform hover:scale-105">
+                        <button id="show-yoga-details" class="w-full mt-4 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-bold py-2 px-4 rounded transition-all duration-300 transform hover:scale-105">
                             Pelajari Posisi Yoga
                         </button>
                     </div>
